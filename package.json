@@ -15,7 +15,17 @@
     "grunt-html-validation": "latest",
     "grunt-scss-lint": "latest",
     "grunt-contrib-imagemin": "latest",
-    "grunt-contrib-jade":"latest"
+    "grunt-contrib-pug":"latest",
+    "grunt-babel": "latest",
+    "grunt-cli":"latest",
+    "babel-preset-es2015":"latest",
+    "load-grunt-tasks": "latest",
+    "webpack": "latest",
+    "babel-plugin-transform-es2015-modules-commonjs":"latest",
+    "grunt-webpack":"latest"
+  },
+  "dependencies":{
+    "jquery":"latest"
   },
   "description": "My repository for job projects.",
   "main": "Gruntfile.js",
