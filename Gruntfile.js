@@ -1,173 +1,178 @@
-import grunt from 'grunt';
-import loadTasks from 'load-grunt-tasks';
-loadTasks(grunt);
-grunt.initConfig({
-    htmlmin: {
-        dist: {
-            options: {
-                removeComments: true,
-                collapseWhitespace: true
-            },
-            files: {
-                'build/index.html': 'index.html'
+module.exports = function (grunt) {
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {
+                    'build/index.html': 'index.html'
+                }
             }
-        }
-    },
-    uglify: {
-        options: {
-            mangle: false
         },
-        my_target: {
-            files: {
-                'build/js/script.js': [
-                    'js/script.js'
-                ],
-                'build/js/offline-disable.js': [
-                    'js/offline-disable.js'
-                ]
-            }
-        }
-    },
-    copy: {
-        main: {
-            files: [
-                {
-                    expand: true,
-                    src: [
-                        'bower_components/**'
+        uglify: {
+            options: {
+                mangle: false
+            },
+            my_target: {
+                files: {
+                    'build/js/script.js': [
+                        'js/script.js'
                     ],
-                    dest: 'build/'
+                    'build/js/offline-disable.js': [
+                        'js/offline-disable.js'
+                    ]
                 }
-            ]
-        }
-    },
-    cssmin: {
-        options: {
-            shorthandCompacting: false,
-            roundingPrecision: -1
+            }
         },
-        target: {
-            files: {
-                'build/styles/css/style.css': [
-                    'styles/css/style.css'
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            'bower_components/**'
+                        ],
+                        dest: 'build/'
+                    }
                 ]
             }
-        }
-    },
-
-    clean: {
-        build: ['build']
-    },
-    sass: {
-        dist: {
-            files: {
-                'styles/css/style.css': 'styles/sass/style.scss'
-            }
-        }
-    },
-
-    jade: {
-        compile: {
+        },
+        cssmin: {
             options: {
-                data: {
-                    debug: false
-                }
+                shorthandCompacting: false,
+                roundingPrecision: -1
             },
-            files: {
-                "index.html": ["jade/index.jade"]
+            target: {
+                files: {
+                    'build/styles/css/style.css': [
+                        'styles/css/style.css'
+                    ]
+                }
             }
-        }
-    },
-
-    connect: {
-
-        options: {
-            port: 3000,
-            hostname: 'localhost',
-            livereload: 35719
         },
 
-        livereload: {
+        clean: {
+            build: ['build']
+        },
+        sass: {
+            dist: {
+                files: {
+                    'styles/css/style.css': 'styles/sass/style.scss'
+                }
+            }
+        },
+
+        pug: {
+            compile: {
+                options: {
+                    data: {
+                        debug: false
+                    }
+                },
+                files: {
+                    "index.html": ["jade/index.pug"]
+                }
+            }
+        },
+
+        connect: {
+
             options: {
-                open: true
-            }
-        }
-    },
+                port: 3000,
+                hostname: 'localhost',
+                livereload: 35719
+            },
 
-    watch: {
-        scss: {
-            files: ['styles/sass/*.scss'],
-            tasks: ['sass']
-            //options:{
-            //    livereload: '<%= connect.options.livereload %>',
-            //}
+            livereload: {
+                options: {
+                    open: true
+                }
+            }
         },
-        jade: {
-            files: ['jade/*.jade'],
-            tasks: ['jade']
+
+        watch: {
+            scss: {
+                files: ['styles/sass/*.scss'],
+                tasks: ['sass']
+                //options:{
+                //    livereload: '<%= connect.options.livereload %>',
+                //}
+            },
+            jade:{
+                files:['jade/*.jade'],
+                tasks: ['jade']
+            },
+            css: {
+                files: ['styles/css/*.css']
+            },
+            html: {
+                files: ['*.html']
+                //tasks: ['validation']
+            },
+            js: {
+                files: ['js/*.js', 'Gruntfile.js']
+            },
+            options: {
+                //livereload: '<%= connect.options.livereload %>'
+            },
+            livereload: {
+                files: [
+                    'styles/css/*.css',
+                    '<%=watch.html.files%>',
+                    '<%=watch.js.files%>'
+                ],
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                }
+            }
         },
-        js: {
-            files: ['js/es6/*.es6'],
-            tasks: ['babel']
+        validation: {
+            files: {
+                src: ['*.html']
+            }
         },
-        options: {
-            //livereload: '<%= connect.options.livereload %>'
-        },
-        livereload: {
-            files: [
-                'styles/css/*.css',
-                '<%=watch.html.files%>',
-                '<%=watch.js.files%>'
+        scsslint: {
+            allFiles: [
+                'styles/sass/*.scss'
             ],
             options: {
-                livereload: '<%= connect.options.livereload %>'
+                bundleExec: true,
+                config: '.scss-lint.yml',
+                reporterOutput: 'scss-lint-report.xml',
+                colorizeOutput: true
             }
-        }
-    },
-    validation: {
-        files: {
-            src: ['*.html']
-        }
-    },
-
-    babel: {
-        options: {
-            sourceMap: true,
-            presets: ['es2015']
         },
-        dist: {
-            files: {
-                'js/es5/script.js': 'js/es6/script.es6'
+        imagemin: {
+            dynamic: {
+                options: {
+                    optimizationLevel: 7
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'img/',
+                    src: ['**/*.{png,jpg,jpeg}'],
+                    dest: 'build/img'
+                }]
             }
         }
-    },
+    });
 
-    scsslint: {
-        allFiles: [
-            'styles/sass/*.scss'
-        ],
-        options: {
-            bundleExec: true,
-            config: '.scss-lint.yml',
-            reporterOutput: 'scss-lint-report.xml',
-            colorizeOutput: true
-        }
-    },
-    imagemin: {
-        dynamic: {
-            options: {
-                optimizationLevel: 7
-            },
-            files: [{
-                expand: true,
-                cwd: 'img/',
-                src: ['**/*.{png,jpg,jpeg}'],
-                dest: 'build/img'
-            }]
-        }
-    }
-});
-
-grunt.registerTask('build', ['clean:build', 'sass', 'jade', 'cssmin', 'htmlmin', 'copy', 'babel' ,'uglify', 'imagemin']);
-grunt.registerTask('serve', ['jade', 'sass', 'babel','connect', 'watch']);
-grunt.registerTask('valid', ['validation', 'scsslint']);
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-scss-lint');
+    grunt.loadNpmTasks('grunt-html-validation');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-pug');
+    grunt.registerTask('build', ['clean:build', 'sass','pug', 'cssmin', 'htmlmin' ,'copy','uglify', 'imagemin']);
+    grunt.registerTask('serve', ['pug','sass', 'connect', 'watch']);
+    grunt.registerTask('valid', ['validation','scsslint']);
+};
