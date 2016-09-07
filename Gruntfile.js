@@ -54,6 +54,20 @@ module.exports = function (grunt) {
             }
         },
 
+        babel: {
+            babel: {
+                options: {
+                    sourceMap: true,
+                    presets: ['es2015']
+                },
+                dist: {
+                    files: {
+                        'js/es6/script.es6': 'js/es5/script.js'
+                    }
+                }
+            }
+        },
+
         clean: {
             build: ['build']
         },
@@ -172,7 +186,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-pug');
-    grunt.registerTask('build', ['clean:build', 'sass','pug', 'cssmin', 'htmlmin' ,'copy','uglify', 'imagemin']);
-    grunt.registerTask('serve', ['pug','sass', 'connect', 'watch']);
+    grunt.loadNpmTasks('grunt-babel');
+    grunt.registerTask('build', ['clean:build', 'sass','pug','babel' ,'cssmin', 'htmlmin' ,'copy','uglify', 'imagemin']);
+    grunt.registerTask('serve', ['pug','sass','babel' ,'connect', 'watch']);
     grunt.registerTask('valid', ['validation','scsslint']);
 };
