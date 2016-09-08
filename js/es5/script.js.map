@@ -1,1 +1,1 @@
-{"version":3,"sources":["../es6/script.es6"],"names":[],"mappings":"AAAA","file":"script.js","sourcesContent":["'use strict';\n\n"]}
+{"version":3,"sources":["../es6/script.es6"],"names":["hello","alert"],"mappings":"AAAA;;AACA,IAAIA,QAAQ,SAARA,KAAQ,GAAK;AACfC,QAAM,OAAN;AACD,CAFD;;AAIAD","file":"script.js","sourcesContent":["'use strict';\nlet hello = ()=> {\n  alert('hello');\n};\n\nhello();\n"]}
