@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             },
             my_target: {
                 files: {
-
+                    'build/js/es5/script.js': ['js/es5/script.js']
                 }
             }
         },
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'js/es6/script.js': 'js/es5/script.es6'
+                    'js/es5/script.js': 'js/es6/script.es6'
                 }
             }
         },
@@ -113,16 +113,12 @@ module.exports = function (grunt) {
                 files: ['jade/*.jade'],
                 tasks: ['jade']
             },
-            css: {
-                files: ['styles/css/*.css']
+
+            es6: {
+                files: ['js/es6/*.es6'],
+                tasks: ['babel']
             },
-            html: {
-                files: ['*.html']
-                //tasks: ['validation']
-            },
-            js: {
-                files: ['js/*.js', 'Gruntfile.js']
-            },
+
             options: {
                 //livereload: '<%= connect.options.livereload %>'
             },
@@ -137,22 +133,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        validation: {
-            files: {
-                src: ['*.html']
-            }
-        },
-        scsslint: {
-            allFiles: [
-                'styles/sass/*.scss'
-            ],
-            options: {
-                bundleExec: true,
-                config: '.scss-lint.yml',
-                reporterOutput: 'scss-lint-report.xml',
-                colorizeOutput: true
-            }
-        },
+
         imagemin: {
             dynamic: {
                 options: {
@@ -175,13 +156,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-scss-lint');
-    grunt.loadNpmTasks('grunt-html-validation');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-babel');
     grunt.registerTask('build', ['clean:build', 'sass', 'pug', 'babel', 'cssmin', 'htmlmin', 'copy', 'uglify', 'imagemin']);
     grunt.registerTask('serve', ['pug', 'sass', 'babel', 'connect', 'watch']);
-    grunt.registerTask('valid', ['validation', 'scsslint']);
 };

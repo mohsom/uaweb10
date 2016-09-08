@@ -16,9 +16,7 @@
     "grunt-contrib-pug": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-html-validation": "latest",
-    "grunt-scss-lint": "latest",
+    "grunt-contrib-watch": "latest"
   },
   "dependencies": {
 

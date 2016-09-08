@@ -1,1 +1,1 @@
-{"version":3,"sources":["../es6/script.es6"],"names":["alert"],"mappings":";;AAAA;;;;;;AACAA,MAAM,KAAN","file":"script.js","sourcesContent":["import $ from 'jquery';\r\nalert('hi!');"]}
+{"version":3,"sources":["../es6/script.es6"],"names":[],"mappings":"AAAA","file":"script.js","sourcesContent":["'use strict';\n\n"]}
