@@ -1,2 +1,2 @@
-import $ from 'jquery';
-window.$=$;
+'use strict';
+

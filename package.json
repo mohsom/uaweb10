@@ -2,30 +2,26 @@
   "name": "application-name",
   "version": "0.0.1",
   "devDependencies": {
+    "babel-preset-es2015": "latest",
     "bower": "latest",
     "grunt": "latest",
+    "grunt-babel": "latest",
+    "grunt-cli": "latest",
     "grunt-contrib-clean": "latest",
     "grunt-contrib-connect": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-pug": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-html-validation": "latest",
     "grunt-scss-lint": "latest",
-    "grunt-contrib-imagemin": "latest",
-    "grunt-contrib-pug":"latest",
-    "grunt-babel": "latest",
-    "grunt-cli":"latest",
-    "babel-preset-es2015":"latest",
-    "load-grunt-tasks": "latest",
-    "webpack": "latest",
-    "babel-plugin-transform-es2015-modules-commonjs":"latest",
-    "grunt-webpack":"latest"
   },
-  "dependencies":{
-    "jquery":"latest"
+  "dependencies": {
+
   },
   "description": "My repository for job projects.",
   "main": "Gruntfile.js",

@@ -18,12 +18,7 @@ module.exports = function (grunt) {
             },
             my_target: {
                 files: {
-                    'build/js/script.js': [
-                        'js/script.js'
-                    ],
-                    'build/js/offline-disable.js': [
-                        'js/offline-disable.js'
-                    ]
+
                 }
             }
         },
@@ -55,15 +50,14 @@ module.exports = function (grunt) {
         },
 
         babel: {
-            babel: {
-                options: {
-                    sourceMap: true,
-                    presets: ['es2015']
-                },
-                dist: {
-                    files: {
-                        'js/es6/script.es6': 'js/es5/script.js'
-                    }
+            options: {
+                sourceMap: true,
+                presets: ['es2015'],
+                plugins:['transform-es2015-modules-commonjs']
+            },
+            dist: {
+                files: {
+                    'js/es6/script.js': 'js/es5/script.es6'
                 }
             }
         },
@@ -115,8 +109,8 @@ module.exports = function (grunt) {
                 //    livereload: '<%= connect.options.livereload %>',
                 //}
             },
-            jade:{
-                files:['jade/*.jade'],
+            jade: {
+                files: ['jade/*.jade'],
                 tasks: ['jade']
             },
             css: {
@@ -187,7 +181,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-babel');
-    grunt.registerTask('build', ['clean:build', 'sass','pug','babel' ,'cssmin', 'htmlmin' ,'copy','uglify', 'imagemin']);
-    grunt.registerTask('serve', ['pug','sass','babel' ,'connect', 'watch']);
-    grunt.registerTask('valid', ['validation','scsslint']);
+    grunt.registerTask('build', ['clean:build', 'sass', 'pug', 'babel', 'cssmin', 'htmlmin', 'copy', 'uglify', 'imagemin']);
+    grunt.registerTask('serve', ['pug', 'sass', 'babel', 'connect', 'watch']);
+    grunt.registerTask('valid', ['validation', 'scsslint']);
 };

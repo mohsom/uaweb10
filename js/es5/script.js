@@ -7,4 +7,4 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 alert('hi!');
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=script.es6.map
