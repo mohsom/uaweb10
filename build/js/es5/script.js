@@ -1,1 +1,1 @@
-"use strict";var hello=function(){alert("hello")};hello();
+"use strict";var hello=function(){console.log("hi!")};hello();

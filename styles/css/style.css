@@ -1,4 +1,7 @@
-body {
-  background-color: #7f7f7f; }
+div {
+  border: 1px solid salmon;
+  background-color: seagreen;
+  padding: 20px;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

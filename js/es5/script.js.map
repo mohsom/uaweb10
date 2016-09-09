@@ -1,1 +1,1 @@
-{"version":3,"sources":["../es6/script.es6"],"names":["hello","alert"],"mappings":"AAAA;;AACA,IAAIA,QAAQ,SAARA,KAAQ,GAAK;AACfC,QAAM,OAAN;AACD,CAFD;;AAIAD","file":"script.js","sourcesContent":["'use strict';\nlet hello = ()=> {\n  alert('hello');\n};\n\nhello();\n"]}
+{"version":3,"sources":["../es6/script.es6"],"names":["hello","console","log"],"mappings":"AAAA;;AACA,IAAIA,QAAQ,SAARA,KAAQ,GAAK;AACfC,UAAQC,GAAR,CAAY,KAAZ;AACD,CAFD;;AAIAF","file":"script.js","sourcesContent":["'use strict';\nlet hello = ()=> {\n  console.log('hi!');\n};\n\nhello();\n"]}

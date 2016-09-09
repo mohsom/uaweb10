@@ -81,7 +81,7 @@ module.exports = function (grunt) {
                     }
                 },
                 files: {
-                    "index.html": ["jade/index.pug"]
+                    "index.html": ["pug/index.pug"]
                 }
             }
         },
@@ -109,9 +109,9 @@ module.exports = function (grunt) {
                 //    livereload: '<%= connect.options.livereload %>',
                 //}
             },
-            jade: {
-                files: ['jade/*.jade'],
-                tasks: ['jade']
+            pug: {
+                files: ['pug/*.pug'],
+                tasks: ['pug']
             },
 
             es6: {
@@ -125,8 +125,8 @@ module.exports = function (grunt) {
             livereload: {
                 files: [
                     'styles/css/*.css',
-                    '<%=watch.html.files%>',
-                    '<%=watch.js.files%>'
+                    '<%=watch.pug.files%>',
+                    '<%=watch.es6.files%>'
                 ],
                 options: {
                     livereload: '<%= connect.options.livereload %>'

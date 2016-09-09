@@ -1,7 +1,7 @@
 'use strict';
 
 var hello = function hello() {
-  alert('hello');
+  console.log('hi!');
 };
 
 hello();

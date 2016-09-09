@@ -1,6 +1,6 @@
 'use strict';
 let hello = ()=> {
-  alert('hello');
+  console.log('hi!');
 };
 
 hello();
