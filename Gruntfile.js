@@ -103,14 +103,14 @@ module.exports = function (grunt) {
 
         watch: {
             scss: {
-                files: ['styles/sass/*.scss'],
+                files: ['styles/sass/*.scss', 'styles/sass/components/*.scss'],
                 tasks: ['sass']
                 //options:{
                 //    livereload: '<%= connect.options.livereload %>',
                 //}
             },
             pug: {
-                files: ['pug/*.pug'],
+                files: ['pug/*.pug', 'pug/components/*.pug'],
                 tasks: ['pug']
             },
 
