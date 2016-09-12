@@ -1,0 +1,108 @@
+.footer {
+  background-color: $violet-light;
+  padding: 76px 80px 80px 80px;
+  &-left {
+    display: inline-block;
+    vertical-align: text-top;
+    &__logo {
+      margin-bottom: 65px;
+    }
+    &-subscribe {
+      margin-bottom: 65px;
+      &__title {
+        @extend .title-small;
+        margin-bottom: 27px;
+      }
+      form {
+        border-bottom: 1px solid #ab9fb7;
+        width: 230px;
+      }
+      &__input {
+        display: inline-block;
+        vertical-align: middle;
+        background: $violet-light;
+        color: #fff;
+        border: none;
+        width: 206px;
+        padding-bottom: 5px;
+        &::-webkit-input-placeholder {
+          color: #fff;
+          opacity: 1;
+          font-size: 13px;
+          padding-left: 20px;
+        }
+        &::-moz-placeholder {
+          color: #fff;
+          opacity: 1
+        }
+        &:-moz-placeholder {
+          color: #fff;
+          opacity: 1
+        }
+        &:-ms-input-placeholder {
+          color: #fff;
+          opacity: 1
+        }
+
+        &:focus {
+          outline-width: 0;
+        }
+      }
+      &__submit {
+        display: inline-block;
+        vertical-align: middle;
+        background: $violet-light;
+        border: none;
+        &:focus {
+          outline-width: 0;
+        }
+      }
+    }
+    &-social {
+      &__title {
+        @extend .title-small;
+        margin-bottom: 27px;
+      }
+      &-links {
+        &__link {
+          display: inline-block;
+          padding-right: 35px;
+        }
+      }
+    }
+  }
+  &-right {
+    display: inline-block;
+    vertical-align: text-top;
+    &-menus {
+      margin-left: 190px;
+      margin-top: 20px;
+      &-menu {
+        display: inline-block;
+        vertical-align: text-top;
+        &__title {
+          @extend .title-small;
+          margin-bottom: 35px;
+        }
+        &-links {
+          &__item {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+          }
+        }
+        &__margin {
+          display: inline-block;
+          vertical-align: middle;
+          width: 60px;
+        }
+        &__line {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

@@ -51,6 +51,7 @@
       }
       &-item_with-submenu {
         &-menu {
+          visibility: hidden;
           position: absolute;
           background: #fff;
           top: 52px;
