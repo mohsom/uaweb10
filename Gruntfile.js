@@ -8,7 +8,9 @@ module.exports = function (grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    'build/index.html': 'index.html'
+                    'build/index.html': 'index.html',
+                    'build/lecture.html': 'lecture.html',
+                    'build/lectures-all.html': 'lectures-all.html'
                 }
             }
         },
@@ -81,7 +83,9 @@ module.exports = function (grunt) {
                     }
                 },
                 files: {
-                    "index.html": ["pug/index.pug"]
+                    "index.html": ["pug/index.pug"],
+                    "lecture.html": ["pug/lecture.pug"],
+                    "lectures-all.html": ["pug/lectures-all.pug"]
                 }
             }
         },
