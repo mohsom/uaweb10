@@ -1,0 +1,64 @@
+.header {
+  @extend .default-padding;
+  .header-top-line {
+    .header-search {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 33px;
+      float: right;
+      .header-search__icon {
+
+      }
+    }
+    .header-lang {
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+      &__current {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        color: #424242;
+      }
+      &__arr {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .header-bottom-line {
+    padding-top: 20px;
+    .header__logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .header-menu {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -10px;
+      margin-left: 78px;
+      background: #fff;
+      padding: 0 15px;
+      &_item {
+        @extend .button;
+        display: inline-block;
+        padding: 19px 12px;
+        vertical-align: middle;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    .header__tickets {
+      @extend .button-with-border;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -10px;
+      color: $violet;
+      text-decoration: none;
+      border-color: $violet;
+      padding: 16px 45px;
+      margin-left: 43px;
+    }
+  }
+}

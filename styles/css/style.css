@@ -1,3 +1,68 @@
+.default-padding, .header {
+  padding: 0 45px 0 45px; }
 
+.button, .button-with-border, .header .header-bottom-line .header__tickets, .header .header-bottom-line .header-menu_item {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 500; }
+
+.button-with-border, .header .header-bottom-line .header__tickets {
+  border: 3px solid;
+  font-weight: 600; }
+
+.header .header-top-line .header-search {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 33px;
+  float: right; }
+.header .header-top-line .header-lang {
+  display: inline-block;
+  vertical-align: middle;
+  float: right; }
+  .header .header-top-line .header-lang__current {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #424242; }
+  .header .header-top-line .header-lang__arr {
+    display: inline-block;
+    vertical-align: middle; }
+.header .header-bottom-line {
+  padding-top: 20px; }
+  .header .header-bottom-line .header__logo {
+    display: inline-block;
+    vertical-align: middle; }
+  .header .header-bottom-line .header-menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -10px;
+    margin-left: 78px;
+    background: #fff;
+    padding: 0 15px; }
+    .header .header-bottom-line .header-menu_item {
+      display: inline-block;
+      padding: 19px 12px;
+      vertical-align: middle;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none; }
+  .header .header-bottom-line .header__tickets {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -10px;
+    color: #904eca;
+    text-decoration: none;
+    border-color: #904eca;
+    padding: 16px 45px;
+    margin-left: 43px; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+  body .body-wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    background: url("../../img/bg.jpg") center;
+    background-size: cover;
+    padding-top: 32px; }
 
 /*# sourceMappingURL=style.css.map */
