@@ -9,10 +9,15 @@ header.header
         .header__logo
             img(src='img/logo.png' alt='logo')
         nav.header-menu
-                a(href='#').header-menu_item ГОЛОВНА
-                a(href='#').header-menu_item ЕКСПОЗИЦІЯ ТА ШОУ
-                a(href='#').header-menu_item НОВИНИ
-                a(href='#').header-menu_item ОСВІТНІ ПРОГРАМИ
-                a(href='#').header-menu_item ОРГАНІЗАЦІЯ СВЯТ
-                a(href='#').header-menu_item ПРО НАС
+            a(href='#').header-menu-item ГОЛОВНА
+            .header-menu-item.header-menu-item_with-submenu ЕКСПОЗИЦІЯ ТА ШОУ
+                .header-menu-item_with-submenu-menu
+                    a(href='#').header-menu-item_with-submenu-menu__item ШОУ В МУЗЕЇ
+                    a(href="#").header-menu-item_with-submenu-menu__item ПОДІЇ ТА ЛЕКЦІЇ
+                    a(href='#').header-menu-item_with-submenu-menu__item ВИЇЗДНІ ШОУ
+                    a(href='#').header-menu-item_with-submenu-menu__item 3D ШОУ
+            a(href='#').header-menu-item НОВИНИ
+            a(href='#').header-menu-item ОСВІТНІ ПРОГРАМИ
+            a(href='#').header-menu-item ОРГАНІЗАЦІЯ СВЯТ
+            a(href='#').header-menu-item ПРО НАС
         a(href='#').header__tickets КВИТКИ

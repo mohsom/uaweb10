@@ -1,7 +1,7 @@
 .default-padding, .header {
   padding: 0 45px 0 45px; }
 
-.button, .button-with-border, .header .header-bottom-line .header__tickets, .header .header-bottom-line .header-menu_item {
+.button, .button-with-border, .header .header-bottom-line .header__tickets, .header .header-bottom-line .header-menu-item, .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   font-weight: 500; }
@@ -39,13 +39,25 @@
     margin-left: 78px;
     background: #fff;
     padding: 0 15px; }
-    .header .header-bottom-line .header-menu_item {
+    .header .header-bottom-line .header-menu-item {
       display: inline-block;
       padding: 19px 12px;
       vertical-align: middle;
       font-weight: 500;
       color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      position: relative; }
+    .header .header-bottom-line .header-menu-item_with-submenu-menu {
+      position: absolute;
+      background: #fff;
+      top: 52px;
+      padding: 14px 0; }
+      .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
+        display: block;
+        width: 145px;
+        padding: 10px 20px 15px;
+        color: #000;
+        text-decoration: none; }
   .header .header-bottom-line .header__tickets {
     display: inline-block;
     vertical-align: middle;

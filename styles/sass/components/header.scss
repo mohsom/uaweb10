@@ -39,7 +39,7 @@
       margin-left: 78px;
       background: #fff;
       padding: 0 15px;
-      &_item {
+      &-item {
         @extend .button;
         display: inline-block;
         padding: 19px 12px;
@@ -47,6 +47,23 @@
         font-weight: 500;
         color: #000;
         text-decoration: none;
+        position: relative;
+      }
+      &-item_with-submenu {
+        &-menu {
+          position: absolute;
+          background: #fff;
+          top: 52px;
+          padding: 14px 0;
+          &__item {
+            @extend .button;
+            display: block;
+            width: 145px;
+            padding: 10px 20px 15px;
+            color: #000;
+            text-decoration: none;
+          }
+        }
       }
     }
     .header__tickets {
