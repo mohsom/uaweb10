@@ -74,7 +74,7 @@
     text-decoration: none;
     border-color: #904eca;
     padding: 16px 45px;
-    margin-left: 43px; }
+    margin-left: 25px; }
 
 .footer {
   background-color: #9153cc;
@@ -131,7 +131,7 @@
     display: inline-block;
     vertical-align: text-top; }
     .footer-right-menus {
-      margin-left: 190px;
+      margin-left: 165px;
       margin-top: 20px; }
       .footer-right-menus-menu {
         display: inline-block;
