@@ -6,26 +6,28 @@
     height: 100%;
     background: url('../../img/arrow.png') top left;
   }
+
+  &-slider-controls {
+    position: relative;
+    &__left, &__right {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &__left {
+      float: left;
+    }
+
+    &__right {
+      float: right;
+    }
+  }
+
   &-slider {
     display: inline-block;
     vertical-align: text-bottom;
     @extend .default-padding;
     padding-top: 190px;
-    &-arrows {
-      position: relative;
-      &__left, &__right {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      &__left {
-        float: left;
-      }
-
-      &__right {
-        float: right;
-      }
-    }
     &-slide {
       padding-top: 60px;
       clear: both;
