@@ -7,6 +7,8 @@
     background: url('../../img/arrow.png') top left;
   }
   &-slider {
+    display: inline-block;
+    vertical-align: text-bottom;
     @extend .default-padding;
     padding-top: 190px;
     &-arrows {
@@ -82,6 +84,40 @@
           padding: 21px 50px;
           border: 3px solid #fff;
         }
+      }
+    }
+  }
+
+  &-discount-slider {
+    display: inline-block;
+    vertical-align: text-bottom;
+    position: relative;
+    background: #853fc5;
+    @extend .card;
+    height: 345px;
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+    &__icon {
+      display: block;
+      margin: 40px auto 30px;
+    }
+    &__title {
+      @extend .title;
+      font-size: 22px;
+    }
+    &-slide {
+      margin: 0 auto;
+      width: 420px;
+      padding-top: 35px;
+      &__title {
+        text-decoration: underline;
+        font-size: 23px;
+      }
+      &__desc {
+        margin: 25px 0 auto;
+        font-size: 18px;
+        line-height: 1.2;
       }
     }
   }

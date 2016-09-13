@@ -10,12 +10,15 @@
   border: 3px solid;
   font-weight: 600; }
 
-.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-slider-slide__title {
+.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-slider-slide__title, .promo-discount-slider__title {
   font-weight: 600; }
 
 .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title {
   font-size: 13px;
   color: #fff; }
+
+.card, .promo-discount-slider {
+  width: 605px; }
 
 .header .header-top-line .header-search {
   display: inline-block;
@@ -84,6 +87,8 @@
     height: 100%;
     background: url("../../img/arrow.png") top left; }
   .promo-slider {
+    display: inline-block;
+    vertical-align: text-bottom;
     padding-top: 190px; }
     .promo-slider-arrows {
       position: relative; }
@@ -141,6 +146,31 @@
           color: #8740c8;
           padding: 21px 50px;
           border: 3px solid #fff; }
+  .promo-discount-slider {
+    display: inline-block;
+    vertical-align: text-bottom;
+    position: relative;
+    background: #853fc5;
+    height: 345px;
+    margin-left: 20px;
+    color: #fff;
+    text-align: center; }
+    .promo-discount-slider__icon {
+      display: block;
+      margin: 40px auto 30px; }
+    .promo-discount-slider__title {
+      font-size: 22px; }
+    .promo-discount-slider-slide {
+      margin: 0 auto;
+      width: 420px;
+      padding-top: 35px; }
+      .promo-discount-slider-slide__title {
+        text-decoration: underline;
+        font-size: 23px; }
+      .promo-discount-slider-slide__desc {
+        margin: 25px 0 auto;
+        font-size: 18px;
+        line-height: 1.2; }
 
 .footer {
   background-color: #9153cc;
