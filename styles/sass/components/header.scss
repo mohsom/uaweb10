@@ -1,5 +1,7 @@
 .header {
   @extend .default-padding;
+  position: fixed;
+  z-index: 999;
   .header-top-line {
     .header-search {
       display: inline-block;
