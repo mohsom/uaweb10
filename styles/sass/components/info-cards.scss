@@ -1,12 +1,12 @@
 .info-cards {
-  padding: 0 50px 0 80px;
   margin-top: -600px;
   position: relative;
+  padding: 0 45px 0 88px;
   font-family: 'Open Sans', sans-serif;
   &-card {
     display: inline-block;
     vertical-align: text-top;
-    @extend .card;
+    width: 606px;
     height: 350px;
     color: #fff;
     text-align: center;

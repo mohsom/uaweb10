@@ -17,7 +17,7 @@
   font-size: 13px;
   color: #fff; }
 
-.card, .promo-sliders-discount-slider, .info-cards-card {
+.card, .promo-sliders-discount-slider {
   width: 605px; }
 
 .header .header-top-line .header-search {
@@ -181,13 +181,14 @@
           margin: 35px auto 0 auto; }
 
 .info-cards {
-  padding: 0 50px 0 80px;
   margin-top: -600px;
   position: relative;
+  padding: 0 45px 0 88px;
   font-family: 'Open Sans', sans-serif; }
   .info-cards-card {
     display: inline-block;
     vertical-align: text-top;
+    width: 606px;
     height: 350px;
     color: #fff;
     text-align: center; }
