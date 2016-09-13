@@ -81,7 +81,7 @@
 
 .promo {
   position: relative;
-  padding-bottom: 600px; }
+  padding-bottom: 55px; }
   .promo__arrow {
     position: absolute;
     width: 100%;
@@ -181,13 +181,14 @@
           margin: 35px auto 0 auto; }
 
 .info-cards {
-  margin-top: -600px;
   position: relative;
   padding: 0 45px 0 88px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background: #fff; }
   .info-cards-card {
     display: inline-block;
     vertical-align: text-top;
+    margin-top: -55px;
     width: 606px;
     height: 350px;
     color: #fff;
