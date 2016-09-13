@@ -10,85 +10,83 @@
   border: 3px solid;
   font-weight: 600; }
 
-.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title {
+.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title, .info-cards-card__title {
   font-weight: 600; }
 
 .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title {
   font-size: 13px;
   color: #fff; }
 
-.card, .promo-sliders-discount-slider {
+.card, .promo-sliders-discount-slider, .info-cards-card {
   width: 605px; }
 
-.header {
-  position: fixed;
-  z-index: 999; }
-  .header .header-top-line .header-search {
+.header .header-top-line .header-search {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 33px;
+  float: right; }
+.header .header-top-line .header-lang {
+  display: inline-block;
+  vertical-align: middle;
+  float: right; }
+  .header .header-top-line .header-lang__current {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 33px;
-    float: right; }
-  .header .header-top-line .header-lang {
+    margin-right: 10px;
+    color: #424242; }
+  .header .header-top-line .header-lang__arr {
+    display: inline-block;
+    vertical-align: middle; }
+.header .header-bottom-line {
+  padding-top: 20px; }
+  .header .header-bottom-line .header__logo {
+    display: inline-block;
+    vertical-align: middle; }
+  .header .header-bottom-line .header-menu {
     display: inline-block;
     vertical-align: middle;
-    float: right; }
-    .header .header-top-line .header-lang__current {
+    margin-top: -10px;
+    margin-left: 78px;
+    background: #fff;
+    padding: 0 15px; }
+    .header .header-bottom-line .header-menu-item {
       display: inline-block;
+      padding: 19px 12px;
       vertical-align: middle;
-      margin-right: 10px;
-      color: #424242; }
-    .header .header-top-line .header-lang__arr {
-      display: inline-block;
-      vertical-align: middle; }
-  .header .header-bottom-line {
-    padding-top: 20px; }
-    .header .header-bottom-line .header__logo {
-      display: inline-block;
-      vertical-align: middle; }
-    .header .header-bottom-line .header-menu {
-      display: inline-block;
-      vertical-align: middle;
-      margin-top: -10px;
-      margin-left: 78px;
-      background: #fff;
-      padding: 0 15px; }
-      .header .header-bottom-line .header-menu-item {
-        display: inline-block;
-        padding: 19px 12px;
-        vertical-align: middle;
-        font-weight: 500;
-        color: #000;
-        text-decoration: none;
-        position: relative; }
-      .header .header-bottom-line .header-menu-item_with-submenu-menu {
-        visibility: hidden;
-        position: absolute;
-        background: #fff;
-        top: 52px;
-        padding: 14px 0; }
-        .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
-          display: block;
-          width: 145px;
-          padding: 10px 20px 15px;
-          color: #000;
-          text-decoration: none; }
-    .header .header-bottom-line .header__tickets {
-      display: inline-block;
-      vertical-align: middle;
-      margin-top: -10px;
-      color: #904eca;
+      font-weight: 500;
+      color: #000;
       text-decoration: none;
-      border-color: #904eca;
-      padding: 16px 45px;
-      margin-left: 25px; }
+      position: relative; }
+    .header .header-bottom-line .header-menu-item_with-submenu-menu {
+      visibility: hidden;
+      position: absolute;
+      background: #fff;
+      top: 52px;
+      padding: 14px 0; }
+      .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
+        display: block;
+        width: 145px;
+        padding: 10px 20px 15px;
+        color: #000;
+        text-decoration: none; }
+  .header .header-bottom-line .header__tickets {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -10px;
+    color: #904eca;
+    text-decoration: none;
+    border-color: #904eca;
+    padding: 16px 45px;
+    margin-left: 25px; }
 
 .promo {
-  position: relative; }
+  position: relative;
+  padding-bottom: 600px; }
   .promo__arrow {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../../img/arrow.png") top left; }
+    background: url("../../img/arrow.png") top left no-repeat; }
   .promo-slider-controls {
     position: relative;
     padding: 190px 45px 0 80px; }
@@ -181,6 +179,35 @@
         .promo-sliders-discount-slider-slide-controls {
           display: block;
           margin: 35px auto 0 auto; }
+
+.info-cards {
+  padding: 0 50px 0 80px;
+  margin-top: -600px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif; }
+  .info-cards-card {
+    display: inline-block;
+    vertical-align: text-top;
+    height: 350px;
+    color: #fff;
+    text-align: center; }
+    .info-cards-card_violet {
+      background-color: #8740c8; }
+    .info-cards-card_green {
+      background-color: #90c004; }
+    .info-cards-card__icon {
+      display: block;
+      margin: 0 auto;
+      padding-top: 60px; }
+    .info-cards-card__title {
+      padding-top: 35px;
+      font-size: 23px;
+      line-height: 1.4; }
+    .info-cards-card__desc {
+      margin: 25px auto 0;
+      font-size: 16px;
+      width: 405px;
+      line-height: 1.2; }
 
 .footer {
   background-color: #9153cc;

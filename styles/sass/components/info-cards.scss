@@ -1,0 +1,37 @@
+.info-cards {
+  padding: 0 50px 0 80px;
+  margin-top: -600px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  &-card {
+    display: inline-block;
+    vertical-align: text-top;
+    @extend .card;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+    &_violet {
+      background-color: #8740c8;
+    }
+    &_green {
+      background-color: #90c004;
+    }
+    &__icon {
+      display: block;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+    &__title {
+      @extend .title;
+      padding-top: 35px;
+      font-size: 23px;
+      line-height: 1.4;
+    }
+    &__desc {
+      margin: 25px auto 0;
+      font-size: 16px;
+      width: 405px;
+      line-height: 1.2;
+    }
+  }
+}
