@@ -8,9 +8,8 @@
   }
 
   &-slider-controls {
-    padding-top: 190px;
     position: relative;
-    @extend .default-padding;
+    padding: 190px 45px 0 80px;
     &__left, &__right {
       display: inline-block;
       vertical-align: middle;
@@ -27,7 +26,7 @@
 
   &-sliders {
     clear: both;
-    @extend .default-padding;
+    padding: 0 40px 0 80px;
     &-slider {
       display: inline-block;
       vertical-align: text-bottom;

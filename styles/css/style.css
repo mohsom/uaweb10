@@ -1,4 +1,4 @@
-.default-padding, .header, .promo-slider-controls, .promo-sliders {
+.default-padding, .header {
   padding: 0 45px 0 45px; }
 
 .button, .button-with-border, .header .header-bottom-line .header__tickets, .header .header-bottom-line .header-menu-item, .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
@@ -87,8 +87,8 @@
     height: 100%;
     background: url("../../img/arrow.png") top left; }
   .promo-slider-controls {
-    padding-top: 190px;
-    position: relative; }
+    position: relative;
+    padding: 190px 45px 0 80px; }
     .promo-slider-controls__left, .promo-slider-controls__right {
       display: inline-block;
       vertical-align: middle; }
@@ -97,7 +97,8 @@
     .promo-slider-controls__right {
       float: right; }
   .promo-sliders {
-    clear: both; }
+    clear: both;
+    padding: 0 40px 0 80px; }
     .promo-sliders-slider {
       display: inline-block;
       vertical-align: text-bottom; }
