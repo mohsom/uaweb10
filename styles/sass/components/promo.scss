@@ -98,7 +98,7 @@
       display: inline-block;
       vertical-align: text-bottom;
       position: relative;
-      background: #853fc5;
+      background: #8740c8;
       @extend .card;
       height: 345px;
       margin-left: 60px;
@@ -124,6 +124,10 @@
           margin: 25px 0 auto;
           font-size: 18px;
           line-height: 1.2;
+        }
+        &-controls {
+          display: block;
+          margin: 35px auto 0 auto;
         }
       }
     }
