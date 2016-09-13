@@ -138,14 +138,16 @@
           border: 3px solid #fff;
           color: #fff;
           padding: 21px 50px;
-          margin-right: 35px; }
+          margin-right: 35px;
+          text-decoration: none; }
         .promo-slider-slide-buttons__tickets {
           display: inline-block;
           vertical-align: middle;
           background: #fff;
           color: #8740c8;
           padding: 21px 50px;
-          border: 3px solid #fff; }
+          border: 3px solid #fff;
+          text-decoration: none; }
   .promo-discount-slider {
     display: inline-block;
     vertical-align: text-bottom;
