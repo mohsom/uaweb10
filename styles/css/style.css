@@ -254,7 +254,8 @@
         display: inline-block;
         vertical-align: middle;
         background: #9153cc;
-        border: none; }
+        border: none;
+        cursor: pointer; }
         .footer-left-subscribe__submit:focus {
           outline-width: 0; }
     .footer-left-social__title {
@@ -380,8 +381,7 @@ body {
   body .body-wrapper {
     max-width: 1366px;
     margin: 0 auto;
-    background: url("../../img/bg.jpg") center;
-    background-size: cover;
+    background: url("../../img/bg.jpg") top center;
     padding-top: 32px; }
 
 /*# sourceMappingURL=style.css.map */
