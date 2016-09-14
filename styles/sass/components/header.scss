@@ -46,8 +46,15 @@
         vertical-align: middle;
         font-weight: 500;
         color: #000;
+        background: #fff;
         text-decoration: none;
         position: relative;
+        transition: all 0.1s;
+        &:hover {
+          background: #875fc4;
+          color: #fff;
+          transition: all 0.1s;
+        }
       }
       &-item_with-submenu {
         &-menu {

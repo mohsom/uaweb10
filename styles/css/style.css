@@ -55,8 +55,14 @@
       vertical-align: middle;
       font-weight: 500;
       color: #000;
+      background: #fff;
       text-decoration: none;
-      position: relative; }
+      position: relative;
+      transition: all 0.1s; }
+      .header .header-bottom-line .header-menu-item:hover {
+        background: #875fc4;
+        color: #fff;
+        transition: all 0.1s; }
     .header .header-bottom-line .header-menu-item_with-submenu-menu {
       visibility: hidden;
       position: absolute;
