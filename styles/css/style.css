@@ -294,10 +294,11 @@
   .news-slider-slide {
     display: inline-block;
     vertical-align: text-top;
-    height: 425px;
+    height: 422px;
     background: #fff;
-    width: 404px;
-    text-align: center; }
+    width: 412px;
+    text-align: center;
+    position: relative; }
     .news-slider-slide__date {
       display: block;
       margin: 135px auto 0 auto;
@@ -310,6 +311,12 @@
       font-style: italic;
       width: 290px;
       line-height: 1.5; }
+  .news-slider__details {
+    width: 375px;
+    display: inline-block;
+    vertical-align: text-top;
+    height: 422px;
+    position: relative; }
   .news-slider-controls {
     position: absolute;
     bottom: 35px;

@@ -5,10 +5,11 @@
   &-slide {
     display: inline-block;
     vertical-align: text-top;
-    height: 425px;
+    height: 422px;
     background: #fff;
-    width: 404px;
+    width: 412px;
     text-align: center;
+    position: relative;
     &__date {
       display: block;
       margin: 135px auto 0 auto;
@@ -24,6 +25,15 @@
       line-height: 1.5;
     }
   }
+
+  &__details {
+    width: 375px;
+    display: inline-block;
+    vertical-align: text-top;
+    height: 422px;
+    position: relative;
+  }
+
   &-controls {
     position: absolute;
     bottom: 35px;
