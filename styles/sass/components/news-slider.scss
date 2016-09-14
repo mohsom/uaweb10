@@ -1,0 +1,44 @@
+.news-slider {
+  padding: 0 45px 0 88px;
+  background: #fff;
+  position: relative;
+  &-slide {
+    display: inline-block;
+    vertical-align: text-top;
+    height: 425px;
+    background: #fff;
+    width: 404px;
+    text-align: center;
+    &__date {
+      display: block;
+      margin: 135px auto 0 auto;
+      color: #7b4aa5;
+      font-style: italic;
+      font-size: 18px;
+    }
+    &__new {
+      font-size: 16px;
+      margin: 30px auto 0 auto;
+      font-style: italic;
+      width: 290px;
+      line-height: 1.5;
+    }
+  }
+  &-controls {
+    position: absolute;
+    bottom: 35px;
+    width: 1212px;
+    &__left, &__right {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &__left {
+      float: left;
+    }
+
+    &__right {
+      float: right;
+    }
+  }
+}
