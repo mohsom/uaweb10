@@ -2,17 +2,57 @@
   padding: 0 45px 0 88px;
   background: url('../../img/tesla-bg.jpg') 0 -10px;
   &-activities {
-      &-row {
-        &-card {
-          display: inline-block;
-          vertical-align: text-top;
-          width: 606px;
-          height: 430px;
-          img{
+    &-row {
+      &-card {
+        color: #fff;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 606px;
+        height: 430px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        &_image-card {
+          img {
             width: 100%;
             height: 100%;
           }
         }
+
+        &__type {
+          @extend .title;
+          font-size: 17px;
+          margin: 40px auto 0 auto;
+          width: 440px;
+        }
+
+        &__title {
+          @extend .title;
+          margin: 25px auto 0 auto;
+          width: 440px;
+          font-size: 22px;
+          line-height: 1.3;
+        }
+
+        &__icon {
+          display: block;
+          margin: 85px auto 0 auto;
+        }
+
+        &__desc {
+          margin: 45px auto 0 auto;
+          width: 440px;
+          font-size: 17px;
+          line-height: 1.3;
+        }
+
+        &_green {
+          background: #90c004;
+        }
+
+        &_orange {
+          background: #dd892d;
+        }
       }
+    }
   }
 }

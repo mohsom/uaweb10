@@ -10,7 +10,7 @@
   border: 3px solid;
   font-weight: 600; }
 
-.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title, .info-cards-card__title {
+.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title, .info-cards-card__title, .main-content-activities-row-card__type, .main-content-activities-row-card__title {
   font-weight: 600; }
 
 .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title {
@@ -338,13 +338,37 @@
   padding: 0 45px 0 88px;
   background: url("../../img/tesla-bg.jpg") 0 -10px; }
   .main-content-activities-row-card {
+    color: #fff;
     display: inline-block;
     vertical-align: text-top;
     width: 606px;
-    height: 430px; }
-    .main-content-activities-row-card img {
+    height: 430px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; }
+    .main-content-activities-row-card_image-card img {
       width: 100%;
       height: 100%; }
+    .main-content-activities-row-card__type {
+      font-size: 17px;
+      margin: 40px auto 0 auto;
+      width: 440px; }
+    .main-content-activities-row-card__title {
+      margin: 25px auto 0 auto;
+      width: 440px;
+      font-size: 22px;
+      line-height: 1.3; }
+    .main-content-activities-row-card__icon {
+      display: block;
+      margin: 85px auto 0 auto; }
+    .main-content-activities-row-card__desc {
+      margin: 45px auto 0 auto;
+      width: 440px;
+      font-size: 17px;
+      line-height: 1.3; }
+    .main-content-activities-row-card_green {
+      background: #90c004; }
+    .main-content-activities-row-card_orange {
+      background: #dd892d; }
 
 body {
   font-family: 'Roboto', sans-serif; }
