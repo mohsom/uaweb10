@@ -1,0 +1,19 @@
+.main-content {
+  padding: 0 45px 0 88px;
+  background: url('../../img/tesla-bg.jpg') 0 -10px;
+  height: 1800px;
+  &-activities {
+      &-row {
+        &-card {
+          display: inline-block;
+          vertical-align: text-top;
+          width: 606px;
+          height: 430px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  }
+}
