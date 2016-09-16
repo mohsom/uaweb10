@@ -633,6 +633,41 @@
       .get-visit-book-form__submit:focus {
         outline-width: 0; }
 
+.lectures-all {
+  height: 500px;
+  position: relative; }
+  .lectures-all:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #A352D1;
+    width: 688px;
+    height: 100%; }
+  .lectures-all-block {
+    padding: 45px 55px; }
+
+.page-nav {
+  margin-top: 45px;
+  font-weight: 600; }
+  .page-nav__back {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 18px; }
+  .page-nav__section {
+    display: inline-block;
+    vertical-align: middle;
+    color: #afaab4; }
+  .page-nav__slash {
+    display: inline-block;
+    vertical-align: middle;
+    color: #afaab4;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .page-nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff; }
+
 body {
   font-family: 'Roboto', sans-serif; }
   body .body-wrapper {
