@@ -71,6 +71,9 @@
   &-promo-lectures {
     padding: 105px 0;
     &-lecture {
+      width: 870px;
+      margin-left: auto;
+      margin-right: 0;
       &__preview {
         display: inline-block;
         vertical-align: text-top;
@@ -90,8 +93,8 @@
         &__desc {
           margin-top: 35px;
           font-family: 'Roboto', sans-serif;
-          font-weight: 300;
-          line-height: 1.5;
+          font-weight: 400;
+          line-height: 1.6;
           font-size: 14px;
         }
 
@@ -120,7 +123,7 @@
             font-weight: 600;
             color: #fff;
             background: #8740c8;
-            padding: 20px 22px;
+            padding: 19px 23px;
             text-decoration: none;
           }
         }

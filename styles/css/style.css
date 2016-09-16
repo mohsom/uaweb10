@@ -383,46 +383,50 @@
       margin: 10px auto 40px auto; }
   .main-content-promo-lectures {
     padding: 105px 0; }
-    .main-content-promo-lectures-lecture__preview {
-      display: inline-block;
-      vertical-align: text-top; }
-    .main-content-promo-lectures-lecture-description {
-      display: inline-block;
-      vertical-align: text-top;
-      width: 390px;
-      margin-left: 50px;
-      margin-top: 40px; }
-      .main-content-promo-lectures-lecture-description__title {
-        font-family: 'Roboto', sans-serif;
-        font-size: 23px; }
-      .main-content-promo-lectures-lecture-description__desc {
-        margin-top: 35px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        line-height: 1.5;
-        font-size: 14px; }
-      .main-content-promo-lectures-lecture-description-buttons {
-        margin-top: 60px; }
-        .main-content-promo-lectures-lecture-description-buttons:focus {
-          outline-width: 0; }
-        .main-content-promo-lectures-lecture-description-buttons__read-more {
-          display: inline-block;
-          vertical-align: middle;
-          color: #000;
-          padding: 15px 26px;
-          font-size: 15px;
-          text-decoration: none;
-          border: 3px solid #8740c8;
-          font-weight: 600; }
-        .main-content-promo-lectures-lecture-description-buttons__buy-tickets {
-          display: inline-block;
-          vertical-align: middle;
-          margin-left: 30px;
-          font-weight: 600;
-          color: #fff;
-          background: #8740c8;
-          padding: 20px 22px;
-          text-decoration: none; }
+    .main-content-promo-lectures-lecture {
+      width: 870px;
+      margin-left: auto;
+      margin-right: 0; }
+      .main-content-promo-lectures-lecture__preview {
+        display: inline-block;
+        vertical-align: text-top; }
+      .main-content-promo-lectures-lecture-description {
+        display: inline-block;
+        vertical-align: text-top;
+        width: 390px;
+        margin-left: 50px;
+        margin-top: 40px; }
+        .main-content-promo-lectures-lecture-description__title {
+          font-family: 'Roboto', sans-serif;
+          font-size: 23px; }
+        .main-content-promo-lectures-lecture-description__desc {
+          margin-top: 35px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          line-height: 1.6;
+          font-size: 14px; }
+        .main-content-promo-lectures-lecture-description-buttons {
+          margin-top: 60px; }
+          .main-content-promo-lectures-lecture-description-buttons:focus {
+            outline-width: 0; }
+          .main-content-promo-lectures-lecture-description-buttons__read-more {
+            display: inline-block;
+            vertical-align: middle;
+            color: #000;
+            padding: 15px 26px;
+            font-size: 15px;
+            text-decoration: none;
+            border: 3px solid #8740c8;
+            font-weight: 600; }
+          .main-content-promo-lectures-lecture-description-buttons__buy-tickets {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30px;
+            font-weight: 600;
+            color: #fff;
+            background: #8740c8;
+            padding: 19px 23px;
+            text-decoration: none; }
 
 body {
   font-family: 'Roboto', sans-serif; }
