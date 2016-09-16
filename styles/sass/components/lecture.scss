@@ -23,8 +23,29 @@
           display: block;
         }
         &-info {
-          height: 116px;
+          height: 76px;
           background: #7b3fb3;
+          padding: 18px 25px;
+          &-content {
+            display: inline-block;
+            vertical-align: text-top;
+            color: #fff;
+            &__title {
+              font-size: 18px;
+              margin-bottom: 15px;
+            }
+            &__important {
+              font-weight: 600;
+              font-size: 20px;
+              font-family: 'Roboto Condensed', sans-serif;
+              line-height: 1.2;
+            }
+          }
+          &__margin {
+            display: inline-block;
+            vertical-align: text-top;
+            width: 68px;
+          }
         }
       }
     }

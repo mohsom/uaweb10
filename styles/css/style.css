@@ -740,8 +740,25 @@
         .lecture-block-lecture-desc-poster__image {
           display: block; }
         .lecture-block-lecture-desc-poster-info {
-          height: 116px;
-          background: #7b3fb3; }
+          height: 76px;
+          background: #7b3fb3;
+          padding: 18px 25px; }
+          .lecture-block-lecture-desc-poster-info-content {
+            display: inline-block;
+            vertical-align: text-top;
+            color: #fff; }
+            .lecture-block-lecture-desc-poster-info-content__title {
+              font-size: 18px;
+              margin-bottom: 15px; }
+            .lecture-block-lecture-desc-poster-info-content__important {
+              font-weight: 600;
+              font-size: 20px;
+              font-family: 'Roboto Condensed', sans-serif;
+              line-height: 1.2; }
+          .lecture-block-lecture-desc-poster-info__margin {
+            display: inline-block;
+            vertical-align: text-top;
+            width: 68px; }
     .lecture-block-lecture-tabs {
       display: inline-block;
       vertical-align: text-top;
