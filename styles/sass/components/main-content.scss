@@ -69,7 +69,8 @@
   }
 
   &-promo-lectures {
-    padding: 105px 0;
+    padding-top: 105px;
+    padding-bottom: 80px;
     &-lecture {
       width: 870px;
       margin-left: auto;
@@ -128,6 +129,22 @@
           }
         }
 
+      }
+    }
+    &-controls {
+      position: relative;
+      padding-top: 40px;
+      &__left, &__right {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &__left {
+        float: left;
+      }
+
+      &__right {
+        float: right;
       }
     }
   }
