@@ -21,7 +21,7 @@
           margin-bottom: 25px;
         }
         &__street {
-            @extend .title;
+          @extend .title;
           text-transform: uppercase;
         }
       }
@@ -53,18 +53,40 @@
     &-small-tiles {
       display: inline-block;
       vertical-align: text-top;
+      color: #fff;
+      font-size: 20px;
       &-top {
         height: 250px;
         &-tile {
           display: inline-block;
           height: 250px;
           width: 347px;
+          text-align: center;
+          vertical-align: text-top;
+          &__icon {
+            display: block;
+          }
+
+          &__title {
+            font-weight: 500;
+            font-size: 25px;
+            margin-top: 25px;
+          }
+
           &_cafe {
             background: url('../../img/cafe.jpg');
           }
 
           &_shop {
             background: url('../../img/shop.jpg');
+          }
+
+          &_cafe &__icon {
+            margin: 65px auto 0;
+          }
+
+          &_shop &__icon {
+            margin: 75px auto 0;
           }
         }
 
@@ -77,6 +99,18 @@
           display: inline-block;
           width: 347px;
           height: 428px;
+          vertical-align: text-top;
+          text-align: center;
+          &__icon {
+            display: block;
+            margin: 165px auto 0;
+          }
+
+          &__title {
+            font-weight: 500;
+            font-size: 25px;
+            margin-top: 35px;
+          }
           &_map {
             background: url('../../img/map.jpg');
           }

@@ -477,24 +477,47 @@
           margin-top: 35px; }
     .contacts-grid-small-tiles {
       display: inline-block;
-      vertical-align: text-top; }
+      vertical-align: text-top;
+      color: #fff;
+      font-size: 20px; }
       .contacts-grid-small-tiles-top {
         height: 250px; }
         .contacts-grid-small-tiles-top-tile {
           display: inline-block;
           height: 250px;
-          width: 347px; }
+          width: 347px;
+          text-align: center;
+          vertical-align: text-top; }
+          .contacts-grid-small-tiles-top-tile__icon {
+            display: block; }
+          .contacts-grid-small-tiles-top-tile__title {
+            font-weight: 500;
+            font-size: 25px;
+            margin-top: 25px; }
           .contacts-grid-small-tiles-top-tile_cafe {
             background: url("../../img/cafe.jpg"); }
           .contacts-grid-small-tiles-top-tile_shop {
             background: url("../../img/shop.jpg"); }
+          .contacts-grid-small-tiles-top-tile_cafe .contacts-grid-small-tiles-top-tile__icon {
+            margin: 65px auto 0; }
+          .contacts-grid-small-tiles-top-tile_shop .contacts-grid-small-tiles-top-tile__icon {
+            margin: 75px auto 0; }
       .contacts-grid-small-tiles-bottom {
         display: inline-block;
         vertical-align: text-top; }
         .contacts-grid-small-tiles-bottom-tile {
           display: inline-block;
           width: 347px;
-          height: 428px; }
+          height: 428px;
+          vertical-align: text-top;
+          text-align: center; }
+          .contacts-grid-small-tiles-bottom-tile__icon {
+            display: block;
+            margin: 165px auto 0; }
+          .contacts-grid-small-tiles-bottom-tile__title {
+            font-weight: 500;
+            font-size: 25px;
+            margin-top: 35px; }
           .contacts-grid-small-tiles-bottom-tile_map {
             background: url("../../img/map.jpg"); }
           .contacts-grid-small-tiles-bottom-tile_edu {
