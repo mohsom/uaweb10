@@ -7,7 +7,7 @@
         color: #fff;
         display: inline-block;
         vertical-align: text-top;
-        width: 606px;
+        width: 600px;
         height: 435px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
@@ -62,6 +62,67 @@
 
         &_orange &__title {
           margin: 10px auto 40px auto;
+        }
+
+      }
+    }
+  }
+
+  &-promo-lectures {
+    padding: 105px 0;
+    &-lecture {
+      &__preview {
+        display: inline-block;
+        vertical-align: text-top;
+      }
+      &-description {
+        display: inline-block;
+        vertical-align: text-top;
+        width: 390px;
+        margin-left: 50px;
+        margin-top: 40px;
+        &__title {
+          @extend .title;
+          font-family: 'Roboto', sans-serif;
+          font-size: 23px;
+        }
+
+        &__desc {
+          margin-top: 35px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          line-height: 1.5;
+          font-size: 14px;
+        }
+
+        &-buttons {
+          margin-top: 60px;
+          &:focus {
+            outline-width: 0;
+          }
+          &__read-more {
+            @extend .button;
+            display: inline-block;
+            vertical-align: middle;
+            color: #000;
+            padding: 15px 26px;
+            font-size: 15px;
+            text-decoration: none;
+            border: 3px solid #8740c8;
+            font-weight: 600;
+          }
+
+          &__buy-tickets {
+            @extend .button;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30px;
+            font-weight: 600;
+            color: #fff;
+            background: #8740c8;
+            padding: 20px 22px;
+            text-decoration: none;
+          }
         }
 
       }
