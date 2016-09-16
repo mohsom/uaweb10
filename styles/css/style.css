@@ -10,7 +10,7 @@
   border: 3px solid;
   font-weight: 600; }
 
-.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title, .info-cards-card__title, .main-content-activities-row-card__type, .main-content-activities-row-card__title, .main-content-promo-lectures-lecture-description__title {
+.title, .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title, .promo-sliders-slider-slide__title, .promo-sliders-discount-slider__title, .info-cards-card__title, .main-content-activities-row-card__type, .main-content-activities-row-card__title, .main-content-promo-lectures-lecture-description__title, .contacts-grid-info-address__street {
   font-weight: 600; }
 
 .title-small, .footer-left-subscribe__title, .footer-left-social__title, .footer-right-menus-menu__title {
@@ -449,9 +449,32 @@
     .contacts-grid-info {
       display: inline-block;
       vertical-align: text-top;
+      text-align: center;
       background: #90c004;
       width: 525px;
-      height: 678px; }
+      height: 678px;
+      color: #fff;
+      font-size: 20px; }
+      .contacts-grid-info-address {
+        margin-top: 75px;
+        margin-bottom: 75px; }
+        .contacts-grid-info-address__title {
+          margin-bottom: 25px; }
+        .contacts-grid-info-address__street {
+          text-transform: uppercase; }
+      .contacts-grid-info-shedule__title {
+        margin-bottom: 20px; }
+      .contacts-grid-info-shedule__days {
+        text-transform: uppercase;
+        line-height: 1.7; }
+      .contacts-grid-info-contacts {
+        margin-top: 50px; }
+        .contacts-grid-info-contacts__title {
+          margin-bottom: 33px; }
+        .contacts-grid-info-contacts__tel {
+          line-height: 1.3; }
+        .contacts-grid-info-contacts__mail {
+          margin-top: 35px; }
     .contacts-grid-small-tiles {
       display: inline-block;
       vertical-align: text-top; }
