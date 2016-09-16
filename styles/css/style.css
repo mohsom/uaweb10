@@ -218,7 +218,7 @@
       line-height: 1.2; }
 
 .footer {
-  background-color: #9153cc;
+  background-color: #A352D1;
   padding: 76px 80px 80px 80px; }
   .footer-left {
     display: inline-block;
@@ -235,7 +235,7 @@
       .footer-left-subscribe__input {
         display: inline-block;
         vertical-align: middle;
-        background: #9153cc;
+        background: #A352D1;
         color: #fff;
         border: none;
         width: 206px;
@@ -259,7 +259,7 @@
       .footer-left-subscribe__submit {
         display: inline-block;
         vertical-align: middle;
-        background: #9153cc;
+        background: #A352D1;
         border: none;
         cursor: pointer; }
         .footer-left-subscribe__submit:focus {
@@ -439,12 +439,36 @@
       .main-content-promo-lectures-controls__right {
         float: right; }
 
+.contacts {
+  z-index: 2;
+  position: relative; }
+  .contacts-grid {
+    margin: 0 45px 0 88px;
+    width: 1220px;
+    height: 682px;
+    background: green; }
+  .contacts:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #A352D1;
+    width: 685px;
+    height: 100%; }
+  .contacts:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 190px;
+    width: 100%;
+    background: #A352D1; }
+
 body {
   font-family: 'Roboto', sans-serif; }
   body .body-wrapper {
     max-width: 1366px;
     margin: 0 auto;
-    background: url("../../img/bg.jpg") top center;
+    background: url("../../img/bg.jpg") top center no-repeat;
     padding-top: 32px; }
 
 /*# sourceMappingURL=style.css.map */

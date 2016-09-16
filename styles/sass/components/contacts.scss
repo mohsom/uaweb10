@@ -1,3 +1,29 @@
 .contacts {
+  z-index: 2;
+  position: relative;
+  &-grid {
+    margin: 0 45px 0 88px;
+    width: 1220px;
+    height: 682px;
+    background: green;
+  }
 
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #A352D1;
+    width: 685px;
+    height: 100%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 190px;
+    width: 100%;
+    background: #A352D1;
+  }
 }

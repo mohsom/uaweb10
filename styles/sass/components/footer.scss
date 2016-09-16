@@ -1,5 +1,5 @@
 .footer {
-  background-color: $violet-light;
+  background-color: #A352D1;
   padding: 76px 80px 80px 80px;
   &-left {
     display: inline-block;
@@ -20,7 +20,7 @@
       &__input {
         display: inline-block;
         vertical-align: middle;
-        background: $violet-light;
+        background: #A352D1;
         color: #fff;
         border: none;
         width: 206px;
@@ -51,7 +51,7 @@
       &__submit {
         display: inline-block;
         vertical-align: middle;
-        background: $violet-light;
+        background: #A352D1;
         border: none;
         cursor: pointer;
         &:focus {
