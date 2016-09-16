@@ -718,6 +718,18 @@
     vertical-align: middle;
     color: #fff; }
 
+.lecture-block {
+  height: 500px; }
+  .lecture-block:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #A352D1;
+    width: 465px;
+    height: 100%; }
+  .lecture-block-lecture {
+    padding: 45px 55px; }
+
 body {
   font-family: 'Roboto', sans-serif; }
   body .body-wrapper {
