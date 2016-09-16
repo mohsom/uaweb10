@@ -1,0 +1,65 @@
+.lectures-list {
+  margin-left: 120px;
+  &-lecture {
+    margin-bottom: 70px;
+    &-desc {
+      font-weight: 500;
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 445px;
+      height: 325px;
+      background: #A352D1;
+      -webkit-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+      box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 110px 25px 30px 65px;
+      &__type {
+        margin-bottom: 20px;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 60px;
+        line-height: 1.5;
+      }
+
+      &__read-more {
+        @extend .button-with-border;
+        text-decoration: none;
+        font-size: 14px;
+        border-color: #fff;
+        padding: 15px 55px;
+        color: #fff;
+        &:focus {
+          outline-width: 0;
+        }
+      }
+
+      &__date {
+        margin-top: 80px;
+        line-height: 1.5;
+      }
+    }
+    &-image {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+    }
+
+    &_right-sided &-image {
+      -webkit-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+      box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
+    }
+    &_right-sided &-image &-desc {
+      -webkit-box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 0 36px -8px rgba(0, 0, 0, 0.75);
+    }
+  }
+}

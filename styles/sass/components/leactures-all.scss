@@ -1,12 +1,11 @@
 .lectures-all {
-  height: 500px;
   position: relative;
   &:before {
     content: '';
     position: absolute;
     z-index: -1;
     background: #A352D1;
-    width: 688px;
+    width: 465px;
     height: 100%;
   }
   &-block {
