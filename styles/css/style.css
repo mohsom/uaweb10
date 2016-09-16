@@ -444,15 +444,44 @@
   position: relative; }
   .contacts-grid {
     margin: 0 45px 0 88px;
-    width: 1220px;
-    height: 682px;
-    background: green; }
+    width: 1219px;
+    border-top: 2px solid #90c004; }
+    .contacts-grid-info {
+      display: inline-block;
+      vertical-align: text-top;
+      background: #90c004;
+      width: 525px;
+      height: 678px; }
+    .contacts-grid-small-tiles {
+      display: inline-block;
+      vertical-align: text-top; }
+      .contacts-grid-small-tiles-top {
+        height: 250px; }
+        .contacts-grid-small-tiles-top-tile {
+          display: inline-block;
+          height: 250px;
+          width: 347px; }
+          .contacts-grid-small-tiles-top-tile_cafe {
+            background: url("../../img/cafe.jpg"); }
+          .contacts-grid-small-tiles-top-tile_shop {
+            background: url("../../img/shop.jpg"); }
+      .contacts-grid-small-tiles-bottom {
+        display: inline-block;
+        vertical-align: text-top; }
+        .contacts-grid-small-tiles-bottom-tile {
+          display: inline-block;
+          width: 347px;
+          height: 428px; }
+          .contacts-grid-small-tiles-bottom-tile_map {
+            background: url("../../img/map.jpg"); }
+          .contacts-grid-small-tiles-bottom-tile_edu {
+            background: url("../../img/edu.png"); }
   .contacts:before {
     content: '';
     position: absolute;
     z-index: -1;
     background: #A352D1;
-    width: 685px;
+    width: 688px;
     height: 100%; }
   .contacts:after {
     content: '';

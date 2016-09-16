@@ -3,9 +3,52 @@
   position: relative;
   &-grid {
     margin: 0 45px 0 88px;
-    width: 1220px;
-    height: 682px;
-    background: green;
+    width: 1219px;
+    border-top: 2px solid #90c004;
+    &-info {
+      display: inline-block;
+      vertical-align: text-top;
+      background: #90c004;
+      width: 525px;
+      height: 678px;
+    }
+
+    &-small-tiles {
+      display: inline-block;
+      vertical-align: text-top;
+      &-top {
+        height: 250px;
+        &-tile {
+          display: inline-block;
+          height: 250px;
+          width: 347px;
+          &_cafe {
+            background: url('../../img/cafe.jpg');
+          }
+
+          &_shop {
+            background: url('../../img/shop.jpg');
+          }
+        }
+
+      }
+
+      &-bottom {
+        display: inline-block;
+        vertical-align: text-top;
+        &-tile {
+          display: inline-block;
+          width: 347px;
+          height: 428px;
+          &_map {
+            background: url('../../img/map.jpg');
+          }
+          &_edu {
+            background: url('../../img/edu.png');
+          }
+        }
+      }
+    }
   }
 
   &:before {
@@ -13,7 +56,7 @@
     position: absolute;
     z-index: -1;
     background: #A352D1;
-    width: 685px;
+    width: 688px;
     height: 100%;
   }
 
