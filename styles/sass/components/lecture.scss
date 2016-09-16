@@ -1,5 +1,5 @@
 .lecture-block {
-  height: 500px;
+  position: relative;
   &:before {
     content: '';
     position: absolute;
@@ -9,6 +9,31 @@
     height: 100%;
   }
   &-lecture {
-    padding: 45px 55px;
+    padding: 2px 55px 95px 30px;
+    .page-nav {
+      margin-bottom: 30px;
+    }
+    &-desc {
+      margin-left: 110px;
+      &-poster {
+        display: inline-block;
+        vertical-align: text-top;
+        width: 515px;
+        &__image {
+          display: block;
+        }
+        &-info {
+          height: 116px;
+          background: #7b3fb3;
+        }
+      }
+    }
+    &-tabs {
+      display: inline-block;
+      vertical-align: text-top;
+      height: 680px;
+      width: 630px;
+      background: #90c004;
+    }
   }
 }
