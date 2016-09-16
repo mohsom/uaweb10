@@ -130,7 +130,8 @@ module.exports = function (grunt) {
                 files: [
                     'styles/css/*.css',
                     '<%=watch.pug.files%>',
-                    '<%=watch.es6.files%>'
+                    '<%=watch.es6.files%>',
+                    '<%=watch.scss.files%>',
                 ],
                 options: {
                     livereload: '<%= connect.options.livereload %>'
