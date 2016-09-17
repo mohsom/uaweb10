@@ -1,20 +1,20 @@
 .lectures-list {
   margin-left: 120px;
   &-lecture {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     &-desc {
       font-weight: 500;
       font-size: 18px;
       display: inline-block;
       vertical-align: middle;
-      width: 445px;
+      width: 455px;
       height: 325px;
       background: #A352D1;
       -webkit-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
       box-shadow: -9px 0 36px -8px rgba(0, 0, 0, 0.75);
       color: #fff;
-      padding: 110px 25px 30px 65px;
+      padding: 110px 15px 30px 60px;
       &__type {
         margin-bottom: 20px;
       }
@@ -39,7 +39,7 @@
       }
 
       &__date {
-        margin-top: 80px;
+        margin-top: 85px;
         line-height: 1.5;
       }
     }
