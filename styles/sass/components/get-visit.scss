@@ -56,7 +56,7 @@
   &-book {
     display: inline-block;
     vertical-align: text-top;
-    background: #d27a12;
+    background: #dd892d;
     width: 476px;
     height: 355px;
     &-form {
@@ -126,10 +126,24 @@
         color: #fff;
         font-weight: 600;
         border: 1px solid #fff;
-        background: #d27a12;
+        background: #dd892d;
         padding: 15px 35px;
+        transition: all 0.1s;
+        cursor: pointer;
         &:focus {
           outline-width: 0;
+        }
+
+        &:hover {
+          border: 1px solid #9e68d2;
+          color: #fff;
+          transition: all 0.1s;
+        }
+
+        &:active {
+          border: 1px solid #fff;
+          color: #fff;
+          transition: all 0.1s;
         }
       }
 
