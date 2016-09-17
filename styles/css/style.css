@@ -21,7 +21,7 @@
   width: 605px; }
 
 .wrapper {
-  max-width: 1366px;
+  width: 1349px;
   margin: 0 auto;
   padding-top: 32px; }
 
@@ -667,7 +667,7 @@
 .lectures-list {
   margin-left: 120px; }
   .lectures-list-lecture {
-    margin-bottom: 70px; }
+    margin-bottom: 60px; }
     .lectures-list-lecture-desc {
       font-weight: 500;
       font-size: 18px;
@@ -837,10 +837,9 @@
             text-decoration: none; }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  width: 1366px; }
+  font-family: 'Roboto', sans-serif; }
   body .body-wrapper {
-    max-width: 1366px;
+    width: 1349px;
     margin: 0 auto;
     background: url("../../img/bg.jpg") top center no-repeat;
     padding-top: 32px; }
