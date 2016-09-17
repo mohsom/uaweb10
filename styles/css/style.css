@@ -353,13 +353,13 @@
       float: right; }
 
 .main-content {
-  padding: 0 45px 0 88px;
+  padding: 0 45px 0 80px;
   background: url("../../img/tesla-bg.jpg") 0 -10px; }
   .main-content-activities-row-card {
     color: #fff;
     display: inline-block;
     vertical-align: text-top;
-    width: 606px;
+    width: 607px;
     height: 435px;
     text-align: center;
     font-family: 'Open Sans', sans-serif; }
@@ -374,7 +374,7 @@
       margin: 0 auto;
       width: 440px;
       font-size: 22px;
-      line-height: 1.4; }
+      line-height: 1.5; }
     .main-content-activities-row-card__icon {
       display: block; }
     .main-content-activities-row-card__desc {
