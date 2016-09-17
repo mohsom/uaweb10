@@ -1,13 +1,13 @@
 .info-cards {
   position: relative;
-  padding: 0 45px 0 88px;
+  padding: 0 45px 0 80px;
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   &-card {
     display: inline-block;
     vertical-align: text-top;
     margin-top: -55px;
-    width: 606px;
+    width: 607px;
     height: 350px;
     color: #fff;
     text-align: center;
@@ -20,19 +20,19 @@
     &__icon {
       display: block;
       margin: 0 auto;
-      padding-top: 60px;
+      padding-top: 58px;
     }
     &__title {
       @extend .title;
-      padding-top: 35px;
-      font-size: 23px;
-      line-height: 1.4;
+      padding-top: 33px;
+      font-size: 22px;
+      line-height: 1.5;
     }
     &__desc {
       margin: 25px auto 0;
-      font-size: 16px;
-      width: 405px;
-      line-height: 1.2;
+      font-size: 16.5px;
+      width: 430px;
+      line-height: 1.3;
     }
   }
 }
