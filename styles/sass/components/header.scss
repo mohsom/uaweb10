@@ -69,24 +69,20 @@
         }
       }
 
-      .header-menu-item_with-submenu:hover .header-menu-item_with-submenu-menu {
-        visibility: visible;
-        transition: all 0.1s;
-      }
-
       &-item_with-submenu {
+        display: inline-block;
         width: 148px;
         text-align: center;
         padding: 19px 0;
         position: relative;
         &-menu {
           text-align: left;
-          visibility: hidden;
+          display: none;
           position: absolute;
           background: #fff;
           left: -10px;
-          top: 52px;
           padding: 14px 0;
+          top: 50px;
           &__item {
             @extend .button;
             display: block;
@@ -110,6 +106,11 @@
           transition: all 0s;
         }
       }
+      .header-menu-item_with-submenu:hover .header-menu-item_with-submenu-menu {
+        display: block;
+        transition: all 0.1s;
+      }
+
     }
     .header__tickets {
       @extend .button-with-border;
