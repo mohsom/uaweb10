@@ -19,14 +19,14 @@
         }
 
         &__type {
-          @extend .title;
+          font-weight: bold;
           font-size: 17px;
           margin: 40px auto 0 auto;
           width: 440px;
         }
 
         &__title {
-          @extend .title;
+          font-weight: bold;
           margin: 0 auto;
           width: 440px;
           font-size: 22px;
