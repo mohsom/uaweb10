@@ -738,7 +738,10 @@
         vertical-align: text-top;
         width: 515px; }
         .lecture-block-lecture-desc-poster__image {
-          display: block; }
+          display: block;
+          -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75); }
         .lecture-block-lecture-desc-poster-info {
           height: 76px;
           background: #7b3fb3;
@@ -762,9 +765,54 @@
     .lecture-block-lecture-tabs {
       display: inline-block;
       vertical-align: text-top;
-      height: 680px;
       width: 630px;
-      background: #90c004; }
+      padding-top: 55px; }
+      .lecture-block-lecture-tabs-items {
+        padding-left: 80px; }
+        .lecture-block-lecture-tabs-items__item {
+          display: inline-block;
+          vertical-align: middle;
+          color: #c6c6c6;
+          text-decoration: none;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 18px;
+          margin-right: 55px; }
+          .lecture-block-lecture-tabs-items__item_active {
+            color: #9153cc;
+            font-weight: 600; }
+      .lecture-block-lecture-tabs-tickets {
+        margin-top: 52px; }
+        .lecture-block-lecture-tabs-tickets-ticket {
+          padding-left: 80px;
+          color: #000;
+          transition: all 0.2s; }
+          .lecture-block-lecture-tabs-tickets-ticket:hover {
+            color: #fff;
+            background: #9e68d2;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            transition: all 0.2s; }
+          .lecture-block-lecture-tabs-tickets-ticket__category {
+            display: inline-block;
+            vertical-align: middle;
+            width: 215px; }
+          .lecture-block-lecture-tabs-tickets-ticket__price {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 600;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 20px;
+            width: 175px; }
+          .lecture-block-lecture-tabs-tickets-ticket__buy {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 600;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #fff;
+            border: 3px solid #fff;
+            padding: 17px 44px;
+            font-size: 14px;
+            text-decoration: none; }
 
 body {
   font-family: 'Roboto', sans-serif; }
