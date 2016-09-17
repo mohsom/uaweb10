@@ -177,7 +177,7 @@
       text-align: center; }
       .promo-sliders-discount-slider__icon {
         display: block;
-        margin: 40px auto 30px; }
+        margin: 40px auto 28px; }
       .promo-sliders-discount-slider__title {
         font-size: 22px; }
       .promo-sliders-discount-slider-slide {
@@ -186,11 +186,12 @@
         padding-top: 35px; }
         .promo-sliders-discount-slider-slide__title {
           text-decoration: underline;
-          font-size: 23px; }
+          font-size: 22px;
+          line-height: 1.3; }
         .promo-sliders-discount-slider-slide__desc {
-          margin: 25px 0 auto;
+          margin: 20px 0 auto;
           font-size: 18px;
-          line-height: 1.2; }
+          line-height: 1.3; }
         .promo-sliders-discount-slider-slide-controls {
           display: block;
           margin: 35px auto 0 auto; }
