@@ -83,6 +83,18 @@
             padding: 21px 50px;
             margin-right: 35px;
             text-decoration: none;
+            transition: all 0.1s;
+            &:hover {
+              border-color: #90c004;
+              color: #90c004;
+              transition: all 0.1s;
+            }
+
+            &:active {
+              border-color: #d27a12;
+              color: #d27a12;
+              transition: all 0.1s;
+            }
           }
 
           &__tickets {
@@ -93,6 +105,19 @@
             padding: 21px 23px;
             border: 3px solid #fff;
             text-decoration: none;
+            transition: all 0.1s;
+            &:hover {
+              background: transparent;
+              color: #fff;
+              transition: all 0.1s;
+            }
+
+            &:active {
+              border-color: #90c004;
+              background: transparent;
+              color: #90c004;
+              transition: all 0.1s;
+            }
           }
         }
       }
