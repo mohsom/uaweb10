@@ -114,6 +114,20 @@
             text-decoration: none;
             border: 3px solid #8740c8;
             font-weight: 600;
+            transition: all 0.1s;
+
+            &:hover {
+              background: #8740c8;
+              color: #fff;
+              transition: all 0.1s;
+            }
+
+            &:active {
+              border-color: #90c004;
+              background: #90c004;
+              color: #fff;
+              transition: all 0.1s;
+            }
           }
 
           &__buy-tickets {
@@ -124,8 +138,21 @@
             font-weight: 600;
             color: #fff;
             background: #8740c8;
-            padding: 19px 23px;
+            padding: 18px 23px;
             text-decoration: none;
+            transition: all 0.1s;
+            &:hover {
+              background: transparent;
+              color: #8740c8;
+              border-color: #8740c8;
+              transition: all 0.1s;
+            }
+
+            &:active {
+              background: transparent;
+              color: #90c004;
+              transition: all 0.1s;
+            }
           }
         }
 
