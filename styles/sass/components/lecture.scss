@@ -70,11 +70,23 @@
           a{
             color: #c6c6c6;
             text-decoration: none;
+            transition: all 0.1s;
+            &:hover {
+              transition: all 0.1s;
+              color: #9153cc;
+            }
+            &:active {
+              transition: all 0.1s;
+              color: #90c004;
+            }
           }
           &_active {
             a {
               color: #9153cc;
               font-weight: 600;
+              &:active {
+                color: #9153cc;
+              }
             }
           }
         }
@@ -117,6 +129,17 @@
             padding: 17px 44px;
             font-size: 14px;
             text-decoration: none;
+            transition: all 0.1s;
+            &:hover {
+              border-color: #90c004;
+              color: #90c004;
+              transition: all 0.1s;
+            }
+            &:active {
+              border-color: #d27a12;
+              color: #d27a12;
+              transition: all 0.1s;
+            }
           }
         }
       }
