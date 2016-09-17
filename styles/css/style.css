@@ -230,7 +230,7 @@
 
 .footer {
   background-color: #A352D1;
-  padding: 76px 80px 80px 80px; }
+  padding: 76px 30px 80px 80px; }
   .footer-left {
     display: inline-block;
     vertical-align: text-top; }
@@ -284,11 +284,12 @@
     display: inline-block;
     vertical-align: text-top; }
     .footer-right-menus {
-      margin-left: 165px;
+      margin-left: 190px;
       margin-top: 20px; }
       .footer-right-menus-menu {
         display: inline-block;
-        vertical-align: text-top; }
+        vertical-align: text-top;
+        width: 150px; }
         .footer-right-menus-menu__title {
           margin-bottom: 35px; }
         .footer-right-menus-menu-links__item {
@@ -301,9 +302,9 @@
         .footer-right-menus-menu__margin {
           display: inline-block;
           vertical-align: middle;
-          width: 60px; }
+          width: 45px; }
         .footer-right-menus-menu__line {
-          height: 50px; }
+          height: 40px; }
 
 .news-slider {
   padding: 0 45px 0 80px;

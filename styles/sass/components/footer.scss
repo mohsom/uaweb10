@@ -1,6 +1,6 @@
 .footer {
   background-color: #A352D1;
-  padding: 76px 80px 80px 80px;
+  padding: 76px 30px 80px 80px;
   &-left {
     display: inline-block;
     vertical-align: text-top;
@@ -76,11 +76,12 @@
     display: inline-block;
     vertical-align: text-top;
     &-menus {
-      margin-left: 165px;
+      margin-left: 190px;
       margin-top: 20px;
       &-menu {
         display: inline-block;
         vertical-align: text-top;
+        width: 150px;
         &__title {
           @extend .title-small;
           margin-bottom: 35px;
@@ -98,10 +99,10 @@
         &__margin {
           display: inline-block;
           vertical-align: middle;
-          width: 60px;
+          width: 45px;
         }
         &__line {
-          height: 50px;
+          height: 40px;
         }
       }
     }
