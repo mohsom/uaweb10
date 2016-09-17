@@ -98,18 +98,22 @@
           width: 125px;
           padding: 13px 22px 13px 17px;
           &::-webkit-input-placeholder {
-            font-style: italic
+            font-style: italic;
+            color: #c2c2c2;
           }
           &::-moz-placeholder {
-            font-style: italic
+            font-style: italic;
+            color: #c2c2c2;
           }
           /* Firefox 19+ */
           &:-moz-placeholder {
-            font-style: italic
+            font-style: italic;
+            color: #c2c2c2;
           }
           /* Firefox 18- */
           &:-ms-input-placeholder {
-            font-style: italic
+            font-style: italic;
+            color: #c2c2c2;
           }
         }
       }
