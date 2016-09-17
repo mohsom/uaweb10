@@ -1,4 +1,4 @@
-.default-padding, .header {
+.default-padding {
   padding: 0 45px 0 45px; }
 
 .button, .button-with-border, .header .header-bottom-line .header__tickets, .lectures-list-lecture-desc__read-more, .header .header-bottom-line .header-menu-item, .header .header-bottom-line .header-menu-item_with-submenu-menu__item, .main-content-promo-lectures-lecture-description-buttons__read-more, .main-content-promo-lectures-lecture-description-buttons__buy-tickets, .get-visit-book-form__submit {
@@ -20,70 +20,75 @@
 .card, .promo-sliders-discount-slider {
   width: 605px; }
 
-.header .header-top-line .header-search {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 33px;
-  float: right; }
-.header .header-top-line .header-lang {
-  display: inline-block;
-  vertical-align: middle;
-  float: right; }
-  .header .header-top-line .header-lang__current {
+.header {
+  padding: 0 35px 0 45px; }
+  .header .header-top-line .header-search {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
-    color: #424242; }
-  .header .header-top-line .header-lang__arr {
-    display: inline-block;
-    vertical-align: middle; }
-.header .header-bottom-line {
-  padding-top: 20px; }
-  .header .header-bottom-line .header__logo {
-    display: inline-block;
-    vertical-align: middle; }
-  .header .header-bottom-line .header-menu {
+    margin-right: 30px;
+    float: right; }
+  .header .header-top-line .header-lang {
     display: inline-block;
     vertical-align: middle;
-    margin-top: -10px;
-    margin-left: 78px;
-    background: #fff;
-    padding: 0 15px; }
-    .header .header-bottom-line .header-menu-item {
+    float: right;
+    margin-right: 15px; }
+    .header .header-top-line .header-lang__current {
       display: inline-block;
-      padding: 19px 12px;
       vertical-align: middle;
-      font-weight: 500;
-      color: #000;
+      margin-right: 10px;
+      color: #424242; }
+    .header .header-top-line .header-lang__arr {
+      display: inline-block;
+      vertical-align: middle; }
+  .header .header-bottom-line {
+    padding-top: 20px; }
+    .header .header-bottom-line .header__logo {
+      display: inline-block;
+      vertical-align: middle; }
+    .header .header-bottom-line .header-menu {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -10px;
+      margin-left: 78px;
       background: #fff;
-      text-decoration: none;
-      position: relative;
-      transition: all 0.1s; }
-      .header .header-bottom-line .header-menu-item:hover {
-        background: #875fc4;
-        color: #fff;
-        transition: all 0.1s; }
-    .header .header-bottom-line .header-menu-item_with-submenu-menu {
-      visibility: hidden;
-      position: absolute;
-      background: #fff;
-      top: 52px;
-      padding: 14px 0; }
-      .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
-        display: block;
-        width: 145px;
-        padding: 10px 20px 15px;
+      padding: 0 15px; }
+      .header .header-bottom-line .header-menu-item {
+        display: inline-block;
+        padding: 19px 12px;
+        vertical-align: middle;
+        font-weight: 500;
         color: #000;
-        text-decoration: none; }
-  .header .header-bottom-line .header__tickets {
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -10px;
-    color: #904eca;
-    text-decoration: none;
-    border-color: #904eca;
-    padding: 16px 45px;
-    margin-left: 25px; }
+        background: #fff;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.1s; }
+        .header .header-bottom-line .header-menu-item:hover {
+          background: #875fc4;
+          color: #fff;
+          transition: all 0.1s; }
+      .header .header-bottom-line .header-menu-item_with-submenu:hover-menu {
+        visibility: visible; }
+      .header .header-bottom-line .header-menu-item_with-submenu-menu {
+        visibility: hidden;
+        position: absolute;
+        background: #fff;
+        top: 52px;
+        padding: 14px 0; }
+        .header .header-bottom-line .header-menu-item_with-submenu-menu__item {
+          display: block;
+          width: 145px;
+          padding: 10px 20px 15px;
+          color: #000;
+          text-decoration: none; }
+    .header .header-bottom-line .header__tickets {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -10px;
+      color: #904eca;
+      text-decoration: none;
+      border-color: #904eca;
+      padding: 16px 45px;
+      margin-left: 35px; }
 
 .promo {
   position: relative;
