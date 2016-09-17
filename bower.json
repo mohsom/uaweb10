@@ -5,7 +5,7 @@
   "description": "none",
   "license": "MIT",
   "devDependencies": {
-    "normalize.css":"latest",
-    "reset-css":"latest"
+    "normalize.css": "latest",
+    "reset-css": "latest"
   }
 }
