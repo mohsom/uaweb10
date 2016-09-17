@@ -1,5 +1,6 @@
 .lectures-all {
   position: relative;
+  padding-top: 35px;
   &:before {
     content: '';
     position: absolute;
@@ -9,6 +10,6 @@
     height: 100%;
   }
   &-block {
-    padding: 45px 55px;
+    padding: 0 55px 45px;
   }
 }

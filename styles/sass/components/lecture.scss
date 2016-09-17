@@ -1,5 +1,6 @@
 .lecture-block {
   position: relative;
+  padding-top: 35px;
   &:before {
     content: '';
     position: absolute;
@@ -9,7 +10,7 @@
     height: 100%;
   }
   &-lecture {
-    padding: 2px 55px 95px 30px;
+    padding: 2px 0 95px 50px;
     .page-nav {
       margin-bottom: 30px;
     }

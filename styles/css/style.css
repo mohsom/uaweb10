@@ -20,6 +20,11 @@
 .card, .promo-sliders-discount-slider {
   width: 605px; }
 
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-top: 32px; }
+
 .header {
   padding: 0 35px 0 45px; }
   .header .header-top-line .header-search {
@@ -647,7 +652,8 @@
         outline-width: 0; }
 
 .lectures-all {
-  position: relative; }
+  position: relative;
+  padding-top: 35px; }
   .lectures-all:before {
     content: '';
     position: absolute;
@@ -656,7 +662,7 @@
     width: 465px;
     height: 100%; }
   .lectures-all-block {
-    padding: 45px 55px; }
+    padding: 0 55px 45px; }
 
 .lectures-list {
   margin-left: 120px; }
@@ -732,7 +738,8 @@
     color: #fff; }
 
 .lecture-block {
-  position: relative; }
+  position: relative;
+  padding-top: 35px; }
   .lecture-block:before {
     content: '';
     position: absolute;
@@ -741,7 +748,7 @@
     width: 465px;
     height: 100%; }
   .lecture-block-lecture {
-    padding: 2px 55px 95px 30px; }
+    padding: 2px 0 95px 50px; }
     .lecture-block-lecture .page-nav {
       margin-bottom: 30px; }
     .lecture-block-lecture-desc {
@@ -830,7 +837,8 @@
             text-decoration: none; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  width: 1366px; }
   body .body-wrapper {
     max-width: 1366px;
     margin: 0 auto;
