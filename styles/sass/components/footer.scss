@@ -59,6 +59,17 @@
         background: #A352D1;
         border: none;
         cursor: pointer;
+        transition: all 0.1s;
+        &:hover {
+          transform: rotate(25deg);
+          transition: all 0.1s;
+        }
+
+        &:active {
+          transform: scale(1.05);
+          transition: all 0.1s;
+        }
+
         &:focus {
           outline-width: 0;
         }
@@ -72,7 +83,18 @@
       &-links {
         &__link {
           display: inline-block;
-          padding-right: 35px;
+          margin-right: 35px;
+          border-bottom: 2px solid #A352D1;
+          transition: all 0.1s;
+          &:hover {
+            border-color: #90c004;
+            transition: all 0.1s;
+          }
+
+          &:active {
+            border-color: #d27a12;
+            transition: all 0.1s;
+          }
         }
       }
     }
@@ -99,6 +121,16 @@
             color: #fff;
             text-decoration: none;
             font-family: 'Open Sans', sans-serif;
+            transition: all 0.1s;
+            &:hover {
+              color: #90c004;
+              transition: all 0.1s;
+            }
+
+            &:active {
+              color: #d27a12;
+              transition: all 0.1s;
+            }
           }
         }
         &__margin {

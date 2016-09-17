@@ -56,17 +56,28 @@
           color: #fff;
           transition: all 0.1s;
         }
+        &:active {
+          background: #d27a12;
+          color: #fff;
+          transition: all 0.1s;
+        }
       }
       &-item_with-submenu {
+        width: 148px;
+        text-align: center;
+        padding: 19px 0;
+        position: relative;
         &:hover {
           &-menu {
             visibility: visible;
           }
         }
         &-menu {
+          text-align: left;
           visibility: hidden;
           position: absolute;
           background: #fff;
+          left: -10px;
           top: 52px;
           padding: 14px 0;
           &__item {
@@ -77,6 +88,13 @@
             color: #000;
             text-decoration: none;
           }
+          transition: all 0s;
+        }
+        &:hover {
+          font-weight: bold;
+          color: #875fc4;
+          background: #fff;
+          transition: all 0s;
         }
       }
     }
@@ -89,7 +107,19 @@
       text-decoration: none;
       border-color: $violet;
       padding: 16px 45px;
-      margin-left: 30px;
+      margin-left: 31px;
+      transition: all 0.1s;
+      &:hover {
+        border-color: #90c004;
+        color: #90c004;
+        transition: all 0.1s;
+      }
+
+      &:active {
+        border-color: #d27a12;
+        color: #d27a12;
+        transition: all 0.1s;
+      }
     }
   }
 }
