@@ -14,7 +14,7 @@
         margin-bottom: 27px;
       }
       form {
-        border-bottom: 1px solid #ab9fb7;
+        border-bottom: 2px solid #ab9fb7;
         width: 230px;
       }
       &__input {
@@ -33,15 +33,22 @@
         }
         &::-moz-placeholder {
           color: #fff;
-          opacity: 1
+          opacity: 1;
+          font-size: 13px;
+          padding-left: 20px;
         }
         &:-moz-placeholder {
           color: #fff;
-          opacity: 1
+          opacity: 1;
+          font-size: 13px;
+          padding-left: 20px;
         }
         &:-ms-input-placeholder {
+          display: inline-block;
           color: #fff;
-          opacity: 1
+          opacity: 1;
+          font-size: 13px;
+          padding-left: 20px;
         }
 
         &:focus {
