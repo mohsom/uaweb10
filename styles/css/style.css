@@ -393,10 +393,10 @@
     .main-content-activities-row-card_orange .main-content-activities-row-card__title {
       margin: 10px auto 40px auto; }
   .main-content-promo-lectures {
-    padding-top: 105px;
+    padding-top: 110px;
     padding-bottom: 80px; }
     .main-content-promo-lectures-lecture {
-      width: 870px;
+      width: 880px;
       margin-left: auto;
       margin-right: 0; }
       .main-content-promo-lectures-lecture__preview {
@@ -407,10 +407,10 @@
         vertical-align: text-top;
         width: 390px;
         margin-left: 50px;
-        margin-top: 40px; }
+        margin-top: 42px; }
         .main-content-promo-lectures-lecture-description__title {
           font-family: 'Roboto', sans-serif;
-          font-size: 23px; }
+          font-size: 22px; }
         .main-content-promo-lectures-lecture-description__desc {
           margin-top: 35px;
           font-family: 'Roboto', sans-serif;
@@ -418,7 +418,7 @@
           line-height: 1.6;
           font-size: 14px; }
         .main-content-promo-lectures-lecture-description-buttons {
-          margin-top: 60px; }
+          margin-top: 55px; }
           .main-content-promo-lectures-lecture-description-buttons:focus {
             outline-width: 0; }
           .main-content-promo-lectures-lecture-description-buttons__read-more {
@@ -441,7 +441,8 @@
             text-decoration: none; }
     .main-content-promo-lectures-controls {
       position: relative;
-      padding-top: 40px; }
+      padding-top: 40px;
+      padding-right: 10px; }
       .main-content-promo-lectures-controls__left, .main-content-promo-lectures-controls__right {
         display: inline-block;
         vertical-align: middle; }

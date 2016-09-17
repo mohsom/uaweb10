@@ -69,10 +69,10 @@
   }
 
   &-promo-lectures {
-    padding-top: 105px;
+    padding-top: 110px;
     padding-bottom: 80px;
     &-lecture {
-      width: 870px;
+      width: 880px;
       margin-left: auto;
       margin-right: 0;
       &__preview {
@@ -84,11 +84,11 @@
         vertical-align: text-top;
         width: 390px;
         margin-left: 50px;
-        margin-top: 40px;
+        margin-top: 42px;
         &__title {
           @extend .title;
           font-family: 'Roboto', sans-serif;
-          font-size: 23px;
+          font-size: 22px;
         }
 
         &__desc {
@@ -100,7 +100,7 @@
         }
 
         &-buttons {
-          margin-top: 60px;
+          margin-top: 55px;
           &:focus {
             outline-width: 0;
           }
@@ -134,6 +134,7 @@
     &-controls {
       position: relative;
       padding-top: 40px;
+      padding-right: 10px;
       &__left, &__right {
         display: inline-block;
         vertical-align: middle;
