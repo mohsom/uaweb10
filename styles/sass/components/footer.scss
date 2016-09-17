@@ -23,8 +23,8 @@
         background: #A352D1;
         color: #fff;
         border: none;
-        width: 206px;
-        padding-bottom: 5px;
+        width: 200px;
+        padding:  0 0 5px 0;
         &::-webkit-input-placeholder {
           color: #fff;
           opacity: 1;
@@ -37,18 +37,10 @@
           font-size: 13px;
           padding-left: 20px;
         }
-        &:-moz-placeholder {
-          color: #fff;
-          opacity: 1;
-          font-size: 13px;
-          padding-left: 20px;
-        }
         &:-ms-input-placeholder {
-          display: inline-block;
           color: #fff;
           opacity: 1;
           font-size: 13px;
-          padding-left: 20px;
         }
 
         &:focus {
