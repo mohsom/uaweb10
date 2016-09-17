@@ -1,9 +1,5 @@
 @import "_var";
-@import "modificators";
 @import "common";
-@import "big-screen";
-@import "small-screen";
-@import "medium-screen";
 //components
 @import "components/header";
 @import "components/promo";
@@ -12,11 +8,7 @@
 @import "components/news-slider";
 @import "components/main-content";
 @import "components/contacts";
-@import "components/get-visit";
-@import "components/leactures-all";
-@import "components/lectures-list";
-@import "components/page-nav";
-@import "components/lecture";
+
 body {
   font-family: 'Roboto', sans-serif;
   .body-wrapper {

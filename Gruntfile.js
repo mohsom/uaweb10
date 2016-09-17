@@ -44,9 +44,15 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'build/styles/css/style.css': [
-                        'styles/css/style.css'
-                    ]
+                    'build/styles/css/main-page.css': [
+                        'styles/css/main-page.css'
+                    ],
+                    'build/styles/css/lecture-page.css': [
+                        'styles/css/lecture-page.css'
+                    ],
+                    'build/styles/css/all-lectures-page.css': [
+                        'styles/css/all-lectures-page.css'
+                    ],
                 }
             }
         },
@@ -70,7 +76,9 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    'styles/css/style.css': 'styles/sass/style.scss'
+                    'styles/css/main-page.css': 'styles/sass/main-page.scss',
+                    'styles/css/lecture-page.css': 'styles/sass/lecture-page.scss',
+                    'styles/css/all-lectures-page.css': 'styles/sass/all-lectures-page.scss'
                 }
             }
         },

@@ -1,0 +1,17 @@
+@import "_var";
+@import "common";
+//components
+@import "components/header";
+@import "components/get-visit";
+@import "components/page-nav";
+@import "components/lecture";
+@import "components/footer";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  .wrapper {
+    width: 1349px;
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+}
