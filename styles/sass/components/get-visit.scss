@@ -132,6 +132,8 @@
         cursor: pointer;
         &:focus {
           outline-width: 0;
+          border: 1px solid #9e68d2;
+          color: #fff;
         }
 
         &:hover {
