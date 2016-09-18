@@ -36,6 +36,18 @@
         &:focus {
           outline-width: 0;
         }
+
+        &:hover {
+          border-color: #90c004;
+          color: #90c004;
+          transition: all 0.1s;
+        }
+
+        &:active {
+          border-color: #fff;
+          color: #fff;
+          transition: all 0.1s;
+        }
       }
 
       &__date {
